@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <title>Encriptador</title>
+</head>
+<body>
+
+    <header>
+        <h1><img src="img/logo.svg" alt="logo alura" id="logo"> ENCRIPTADOR / DESENCRIPTADOR</h1>
+    </header>
+
+    <main class="container">
+
+        <section class="text-in">
+            <textarea id="input-texto" cols="80" rows="10" placeholder="INGRESE EL TEXTO AQUI"></textarea>
+            <div class="buttons">
+                <button id="encriptar" class="encriptar-desencriptar" onclick="btnEncriptar()">ENCRIPTAR</button>
+                <button id="desencriptar" class="encriptar-desencriptar" onclick="btnDesencriptar()">DESENCRIPTAR</button>
+            </div>
+        </section>
+        
+        <section class="text-out" #="cont-img">
+            <img src="./img/Muñeco.png" alt="persona examinando un diamante" id="munieco">
+            <textarea  class="text-input-salida" id="mensaje">NO SE HA ENCONTRADO UN MENSAJE</textarea>
+            <div class="buttons">
+                <button class="encriptar-desencriptar" onclick="copiar()">Copiar</button>
+                <button class="encriptar-desencriptar" onclick="reiniciar()">Reiniciar</button>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>ENCRIPTADOR DESARROLLADO POR JUANSA</p>
+    </footer>
+
+    <script src="/js/script.js"></script>
+    
+</body>
+</html>
