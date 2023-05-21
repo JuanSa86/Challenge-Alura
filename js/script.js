@@ -45,8 +45,18 @@ function desencriptar(stringDesencriptada){
     return stringDesencriptada;
 }
 function copiar(){
-    alert("el mensaje ha sido copiado!")
-}
+    // Obtener el elemento textarea
+    var textarea = document.getElementById("mensaje");
+  
+    textarea.select();
+    textarea.setSelectionRange(0, 99999);
+
+    document.execCommand("copy");
+  
+    textarea.blur();
+  
+    alert("Mensaje copiado!");
+  }
 
 function reiniciar(){
     textArea.value = "";
