@@ -94,9 +94,7 @@ textarea {
     margin: auto;
     text-align: center;
     font-size: 2em;
-    white-space: pre-wrap;
-    height: auto;
-    max-height: none;
+    height: min-content;
 }
 
 footer{
